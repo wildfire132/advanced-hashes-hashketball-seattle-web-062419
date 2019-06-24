@@ -141,7 +141,7 @@ end
 def team_colors(team_name)
   arr = []
   game_hash.each do |team, values|
-       if values.include?(team_name)
+       if values[:team_name].include?(team_name)
         arr.push(values[:colors])
       end
   end
