@@ -176,7 +176,7 @@ def player_stats(name_name)
     data[:players].each do |name, attributes|
     .include?(name)
     if name == player_name
-       return game_hash[team][data][name]
+       return attributes
       end
     end
   end
