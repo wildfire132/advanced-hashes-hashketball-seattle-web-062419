@@ -145,7 +145,7 @@ def team_colors(team_name)
         arr << values[:colors]
       end
   end
-  array
+  arr
 end
 
 def team_names
