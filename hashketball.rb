@@ -173,8 +173,8 @@ end
 
 def player_stats(name)
   game_hash.each do |team, data| 
-    data.each do |data_point, value| 
-      if data[:players].include?(name)
+    data[:players].each do |name, attributes|
+    .include?(name)
        return game_hash[team][data][name]
       end
     end
