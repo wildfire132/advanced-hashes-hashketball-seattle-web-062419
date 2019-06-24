@@ -134,7 +134,7 @@ def shoe_size(player_name)
   game_hash.each do |team, data|
     data.each do |name, stats|
      if name.include?(player_name)
-       return game_hash[team][data][player_name][:shoe_size]
+       return game_hash[team][data][player_name][:shoe]
       end
     end
   end
