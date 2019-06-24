@@ -174,7 +174,7 @@ end
 def player_stats(name)
   game_hash.each do |team, data| 
     data.each do |data_point, value| 
-      if game_hash[team][data].values.include?(name)
+      if data[:player].values.include?(name)
        return game_hash[team][data][name]
       end
     end
