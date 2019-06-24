@@ -174,8 +174,9 @@ nums
 end 
 
 def player_stats(player_name)
-  game_hash.each do |team, data| 
-    data[:players].each do |name, attributes|
+  game_hash.each do |team, data|  
+    if data == :players
+      data.each do |name, attributes|
     if name == player_name
        return attributes
       end
