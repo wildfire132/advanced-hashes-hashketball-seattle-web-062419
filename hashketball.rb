@@ -145,7 +145,7 @@ def team_colors(team_name)
         arr.push(values[:colors])
       end
   end
-  arr
+  arr.flatten
 end
 
 def team_names
