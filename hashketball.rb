@@ -123,7 +123,7 @@ array = []
   game_hash.each do |team, data|
     data[:players].each do |name, stats|
      if name == player_name
-     return game_hash[team][data][stats][:points]
+     return stats[:points]
     end
   end
 end
