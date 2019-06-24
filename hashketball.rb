@@ -119,13 +119,15 @@ def game_hash
 end
 
 def num_points_scored(player_name)
+  array = []
   game_hash.each do |team, data|
     data.each do |name, stats|
      if name == (player_name)
-       return game_hash[team][data][name][:points]
+       array << game_hash[team][data][name][:points]
     end
   end
 end
+array
 end  
     
 def shoe_size(player_name)
