@@ -143,7 +143,7 @@ def team_colors(team_name)
        if values.include?(team_name)
         values[:colors]
       end
-  end.join("")
+  end
 end
 
 def team_names
