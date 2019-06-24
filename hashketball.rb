@@ -121,7 +121,7 @@ end
 def num_points_scored(player_name)
   array = []
   game_hash.each do |team, data|
-    data.collect do |name, stats|
+    data.each do |name, stats|
      if name == player_name
        array << game_hash[team][data][name][:points]
     end
