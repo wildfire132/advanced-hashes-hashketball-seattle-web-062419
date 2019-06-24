@@ -139,11 +139,13 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
-  game_hash.collect do |team, values|
+  arr = []
+  game_hash.each do |team, values|
        if values.include?(team_name)
-        values[:colors]
+        arr << values[:colors]
       end
   end
+  array
 end
 
 def team_names
