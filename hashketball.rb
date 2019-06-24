@@ -140,7 +140,7 @@ end
 
 def team_colors(team_name)
   game_hash.collect do |team, values|
-       if values[:team_name] == team_name
+       if values.include?(team_name)
         values[:colors]
       end
   end.join("")
